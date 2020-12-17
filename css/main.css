@@ -8,14 +8,15 @@
 a {
   text-decoration: none; }
 
-/******NAV********/
+/***** nav *****/
 .navbar {
-  /*padding: 25px;*/
-  margin: 5px 0px 5px 0px;
+  margin: 0px 0px 5px 0px;
   text-align: center;
   text-transform: uppercase;
   word-spacing: 50px;
-  background-color: #d1f0de; }
+  background-color: #d1f0de;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  display: flex; }
   .navbar ul {
     animation-duration: 3s;
     animation-iteration-count: 1;
@@ -32,18 +33,157 @@ a {
         .navbar ul li a:hover {
           color: #014d4a; }
 
-/*PRODUCTOS DESTACADOS*/
+.btn-outline-success {
+  color: #7EA38D;
+  border-color: #7EA38D; }
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030; }
+
+/***** INDEX *****/
+.about {
+  margin-top: 60px;
+  padding: 60px 0; }
+  .about .about__texto {
+    color: #23c7ac;
+    margin: 0px 30px 0px 0px;
+    animation-duration: .8s;
+    animation-iteration-count: 1;
+    animation-name: slideInUp; }
+  .about .about__h2 {
+    color: #1b9b85;
+    animation-duration: .8s;
+    animation-iteration-count: 1;
+    animation-name: slideInUp; }
+
+.container-fluid img {
+  max-width: 100%; }
+
+/* index imprenta */
+.imprentaIndex {
+  margin-top: 15px; }
+  .imprentaIndex .imprentaIndex__h2 {
+    padding-left: 30px;
+    color: #9a0548; }
+  .imprentaIndex .imprentaIndex__texto {
+    padding-left: 30px;
+    color: #9a0548; }
+
+.imprentaIndex__button {
+  margin-left: 30px;
+  width: 260px;
+  border-radius: 15px;
+  border: 1px solid #ce357a;
+  background-color: #ce357a;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 2px;
+  text-align: center;
+  margin-top: 20px;
+  letter-spacing: 1px;
+  transition: transform 80ms ease-in; }
+  .imprentaIndex__button a {
+    text-decoration: none;
+    color: #feeef5;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transform: color; }
+    .imprentaIndex__button a:hover {
+      color: white; }
+
+/* index sublimacion */
+.sublimacionIndex {
+  margin-top: 60px; }
+  .sublimacionIndex .sublimacionIndex__h2 {
+    padding-right: 30px;
+    color: #e7c604; }
+  .sublimacionIndex .sublimacionIndex__texto {
+    padding-right: 30px;
+    color: #e7c604; }
+
+.sublimacionIndex__button {
+  width: 260px;
+  border-radius: 15px;
+  border: 1px solid #fcf295;
+  background-color: #fcf295;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 2px;
+  text-align: center;
+  margin-top: 20px;
+  letter-spacing: 1px;
+  transition: transform 80ms ease-in; }
+  .sublimacionIndex__button a {
+    text-decoration: none;
+    color: #9c8506;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transform: color; }
+    .sublimacionIndex__button a:hover {
+      color: white; }
+
+/* index serigrafia */
+.serigrafiaIndex {
+  margin-top: 60px;
+  margin-bottom: 60px; }
+  .serigrafiaIndex .serigrafiaIndex__h2 {
+    padding-left: 30px;
+    color: #3281b2; }
+  .serigrafiaIndex .serigrafiaIndex__texto {
+    padding-left: 30px;
+    color: #3281b2; }
+
+.serigrafiaIndex__button {
+  margin-left: 30px;
+  width: 260px;
+  border-radius: 15px;
+  border: 1px solid #0670b1;
+  background-color: #0670b1;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 2px;
+  text-align: center;
+  margin-top: 20px;
+  letter-spacing: 1px;
+  transition: transform 80ms ease-in; }
+  .serigrafiaIndex__button a {
+    text-decoration: none;
+    color: #cdeafc;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transform: color; }
+    .serigrafiaIndex__button a:hover {
+      color: white; }
+
+/* index destacados */
 .destacados__separador img {
   display: block;
-  margin: auto; }
+  margin: auto;
+  margin-bottom: 10px; }
 
 .destacados__h2 {
   padding-top: 40px;
-  /*padding: 15px;*/
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 700;
   font-size: 25px;
-  text-align: center; }
+  text-align: center;
+  color: #418A88; }
 
 .thumbnail {
   display: block;
@@ -59,11 +199,11 @@ a {
   text-align: center;
   padding-top: 15px; }
 
-/****BOTON DESTACADOS****/
+/* boton destacados*/
 .thumbnail__button, .productosImprenta .productosImprenta__button {
   border-radius: 15px;
-  border: 1px solid #77b949;
-  background-color: #77b949;
+  border: 1px solid #B2D9CD;
+  background-color: #B2D9CD;
   color: #FFFFFF;
   font-size: 12px;
   font-weight: bold;
@@ -74,17 +214,18 @@ a {
   text-transform: uppercase;
   transition: transform 80ms ease-in; }
   .thumbnail__button a, .productosImprenta .productosImprenta__button a {
-    color: black;
+    color: #627068;
     font-size: 17px;
     font-weight: bold;
     padding: 12px 45px;
     letter-spacing: 1px;
     text-transform: uppercase;
-    transform: color; }
+    transform: color;
+    text-decoration: none; }
     .thumbnail__button a:hover, .productosImprenta .productosImprenta__button a:hover {
       color: white; }
 
-/*******FOOTER***********/
+/***** footer *****/
 footer {
   padding: 25px;
   text-align: center;
@@ -99,7 +240,7 @@ footer {
   text-align: center;
   padding-top: 15px; }
 
-/*****************GALERIA SUBLIMACION*******/
+/***** page sublimacion *****/
 .separadorEstrellaSubli img {
   display: block;
   margin: auto;
@@ -130,174 +271,95 @@ footer {
   max-width: 100%; }
 
 /**************** PAGE IMPRENTA***********/
-.imprentaTitulo__separador img, .sublimacionTitulo .sublimacionTitulo__separador img img, .serigrafiaTitulo .serigrafiaTitulo__separador img, .nosotrosTitulo .nosotrosTitulo__separador img, .contactoTitulo .contactoTitulo__separador img {
-  display: block;
-  margin: auto;
-  padding-bottom: 10px;
-  max-width: 100%; }
-
-.imprentaTitulo__h2, .sublimacionTitulo .sublimacionTitulo__h2, .serigrafiaTitulo .serigrafiaTitulo__h2, .nosotrosTitulo .nosotrosTitulo__h2, .contactoTitulo .contactoTitulo__h2 {
-  padding-top: 40px;
-  /*padding: 15px;*/
-  font-family: 'Roboto Condensed', sans-serif;
-  font-weight: 700;
-  font-size: 25px;
-  text-align: center; }
+.imprentaTitulo {
+  margin-top: 65px; }
+  .imprentaTitulo .imprentaTitulo__separador img {
+    display: block;
+    margin: auto;
+    padding-bottom: 10px;
+    max-width: 100%; }
+  .imprentaTitulo .imprentaTitulo__h2 {
+    padding-top: 40px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+    color: #418A88; }
 
 .productosImprenta .productosImprenta__button {
   margin-bottom: 15px; }
 
 /************** PAGE SUBLIMACION***********/
-.sublimacionTitulo .sublimacionTitulo__separador img {
-  margin-bottom: 7px; }
-
-.sublimacionTitulo .sublimacionTitulo__p {
-  text-align: center; }
+.sublimacionTitulo {
+  margin-top: 85px; }
+  .sublimacionTitulo .sublimacionTitulo__h2 {
+    padding-top: 40px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+    color: #418A88; }
+  .sublimacionTitulo .sublimacionTitulo__separador img {
+    display: block;
+    margin: auto;
+    padding-bottom: 10px;
+    max-width: 100%;
+    margin-bottom: 7px; }
+  .sublimacionTitulo .sublimacionTitulo__p {
+    text-align: center; }
 
 /********** PAGE SERIGRAFIA ***************/
-.serigrafiaTitulo .serigrafiaTitulo__separador {
-  margin-bottom: 7px; }
-
-.serigrafiaTitulo .serigrafiaTitulo__p {
-  text-align: center; }
+.serigrafiaTitulo {
+  margin-top: 70px; }
+  .serigrafiaTitulo .serigrafiaTitulo__h2 {
+    padding-top: 40px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+    color: #418A88; }
+  .serigrafiaTitulo .serigrafiaTitulo__separador img {
+    display: block;
+    margin: auto;
+    padding-bottom: 10px;
+    max-width: 100%;
+    margin-bottom: 7px; }
+  .serigrafiaTitulo .serigrafiaTitulo__p {
+    text-align: center; }
 
 /*********** PAGE NOSOTROS *********/
-.nosotrosTitulo .nosotrosTitulo__separador {
-  margin-bottom: 7px; }
+.nosotrosTitulo {
+  margin-top: 70px; }
+  .nosotrosTitulo .nosotrosTitulo__h2 {
+    padding-top: 40px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+    color: #418A88; }
+  .nosotrosTitulo .nosotrosTitulo__separador img {
+    display: block;
+    margin: auto;
+    padding-bottom: 10px;
+    max-width: 100%;
+    margin-bottom: 7px; }
 
 /********* PAGE CONTACTO ********/
-.contactoTitulo .contactoTitulo__separador {
-  margin-bottom: 7px; }
-
-/***INDEX NEW**/
-.container-fluid img {
-  max-width: 100%; }
-
-/*index imprenta*/
-.imprentaIndex {
-  margin-top: 15px;
-  /*animation-duration: 1s;
-	animation-iteration-count: 1;
-   	animation-name: slideInLeft;*/ }
-  .imprentaIndex .imprentaIndex__h2 {
-    padding-left: 30px;
-    color: #9a0548; }
-  .imprentaIndex .imprentaIndex__texto {
-    padding-left: 30px;
-    color: #9a0548; }
-
-.imprentaIndex__button {
-  margin-left: 30px;
-  width: 260px;
-  border-radius: 15px;
-  border: 1px solid #ce357a;
-  background-color: #ce357a;
-  color: #FFFFFF;
-  font-size: 12px;
-  font-weight: bold;
-  padding: 12px 2px;
-  text-align: center;
-  margin-top: 20px;
-  letter-spacing: 1px;
-  transition: transform 80ms ease-in; }
-  .imprentaIndex__button a {
-    color: #feeef5;
-    font-size: 17px;
-    font-weight: bold;
-    padding: 12px 45px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    transform: color; }
-    .imprentaIndex__button a:hover {
-      color: white; }
-
-/*index sublimacion*/
-.sublimacionIndex {
-  margin-top: 60px; }
-  .sublimacionIndex .sublimacionIndex__h2 {
-    padding-right: 30px;
-    color: #e7c604; }
-  .sublimacionIndex .sublimacionIndex__texto {
-    padding-right: 30px;
-    color: #e7c604; }
-
-.sublimacionIndex__button {
-  width: 260px;
-  border-radius: 15px;
-  border: 1px solid #fcf295;
-  background-color: #fcf295;
-  color: #FFFFFF;
-  font-size: 12px;
-  font-weight: bold;
-  padding: 12px 2px;
-  text-align: center;
-  margin-top: 20px;
-  letter-spacing: 1px;
-  transition: transform 80ms ease-in; }
-  .sublimacionIndex__button a {
-    color: #9c8506;
-    font-size: 17px;
-    font-weight: bold;
-    padding: 12px 45px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    transform: color; }
-    .sublimacionIndex__button a:hover {
-      color: white; }
-
-/*index serigrafia*/
-.serigrafiaIndex {
-  margin-top: 60px;
-  margin-bottom: 60px; }
-  .serigrafiaIndex .serigrafiaIndex__h2 {
-    padding-left: 30px;
-    color: #3281b2; }
-  .serigrafiaIndex .serigrafiaIndex__texto {
-    padding-left: 30px;
-    color: #3281b2; }
-
-.serigrafiaIndex__button {
-  margin-left: 30px;
-  width: 260px;
-  border-radius: 15px;
-  border: 1px solid #0670b1;
-  background-color: #0670b1;
-  color: #FFFFFF;
-  font-size: 12px;
-  font-weight: bold;
-  padding: 12px 2px;
-  text-align: center;
-  margin-top: 20px;
-  letter-spacing: 1px;
-  transition: transform 80ms ease-in; }
-  .serigrafiaIndex__button a {
-    color: #cdeafc;
-    font-size: 17px;
-    font-weight: bold;
-    padding: 12px 45px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    transform: color; }
-    .serigrafiaIndex__button a:hover {
-      color: white; }
-
-.about {
-  padding: 60px 0; }
-  .about .about__foto {
-    animation-duration: .8s;
-    animation-iteration-count: 1;
-    animation-name: zoomIn; }
-  .about .about__texto {
-    color: #23c7ac;
-    margin: 0px 30px 0px 0px;
-    animation-duration: .8s;
-    animation-iteration-count: 1;
-    animation-name: slideInUp; }
-  .about .about__h2 {
-    color: #1b9b85;
-    animation-duration: .8s;
-    animation-iteration-count: 1;
-    animation-name: slideInUp; }
+.contactoTitulo {
+  margin-top: 70px; }
+  .contactoTitulo .contactoTitulo__h2 {
+    padding-top: 40px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+    color: #418A88; }
+  .contactoTitulo .contactoTitulo__separador img {
+    display: block;
+    margin: auto;
+    padding-bottom: 10px;
+    max-width: 100%;
+    margin-bottom: 7px; }
 
 /*EFECTOS*/
 .fadeInDown {
